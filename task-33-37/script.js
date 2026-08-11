@@ -57,18 +57,21 @@
   let num3 = "30";
 
   if (num3 > num1) {
+    // Condition 1
     if (typeof num3 !== typeof num1) {
       console.log(
         `${num3} Is Larger Than ${num1} And Type ${typeof num3} Not The Same Type As ${typeof num1}`,
       );
     }
 
+    // Condition 2
     if (num3 === String(num2) && typeof num3 !== typeof num2) {
       console.log(
         `${num3} Is Larger Than ${num1} And Value Is The Same As ${num2} And Type ${typeof num3} Not The Same Type As ${typeof num2}`,
       );
     }
 
+    // Condition 3
     if (
       num3 !== num1 &&
       typeof num3 !== typeof num1 &&
