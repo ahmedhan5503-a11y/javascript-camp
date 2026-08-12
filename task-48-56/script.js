@@ -3,7 +3,7 @@
   Loop Challenge
 */
 
-let myAdmins = ["Ahmed", "Osama", "Sayed", "Stop", "Samera"];
+let myAdmins = ["Ahmed", "Osama", "Sayed", "Stop", "Samera", "ola", "fatma"];
 
 let myEmployees = [
   "Amgad",
@@ -14,6 +14,7 @@ let myEmployees = [
   "Amany",
   "Samia",
   "Anwar",
+  "ola",
 ];
 
 // Get number of admins before Stop
@@ -41,7 +42,7 @@ for (let i = 0; i < adminsCount; i++) {
   let coun = 1;
 
   for (let j = 0; j < myEmployees.length; j++) {
-    if (myEmployees[j][0] === myAdmins[i][0]) {
+    if (myEmployees[j][0].toLowerCase() === myAdmins[i][0].toLowerCase()) {
       document.write(`<p>- ${coun} ${myEmployees[j]}</p>`);
 
       coun++;
@@ -51,7 +52,6 @@ for (let i = 0; i < adminsCount; i++) {
   document.write(`</div>`);
   document.write(`<hr>`);
 }
-
 // ==================== Task 1 ====================
 
 let start = 10;
