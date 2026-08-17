@@ -70,7 +70,7 @@ console.log(res); // [-1, -10, 10, 20, -5, -3]
 
 let nums = [2, 12, 11, 5, 10, 1, 99];
 
-let result = nums.reduce(function (acc, current) {
+let re = nums.reduce(function (acc, current) {
   if (current % 2 === 0) {
     return acc * current;
   } else {
@@ -78,4 +78,4 @@ let result = nums.reduce(function (acc, current) {
   }
 }, 1);
 
-console.log(result); // 500
+console.log(re); // 500
