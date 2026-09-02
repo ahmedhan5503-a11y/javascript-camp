@@ -4,8 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   <link
+    href="https://fonts.googleapis.com/css2?family=Cairo&family=Open+Sans&family=Roboto&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+
+  <div class="form">
+    <input
+      type="text"
+      id="taskInput"
+      placeholder="Add Your Task"
+    />
+
+    <button id="addTask">Add Task</button>
+  </div>
+
+  <div id="tasks"></div>
+
+</div>
+
+<div id="counter">10</div>
+
+  <div class="container">
+
+    <h1>Customize Your Page</h1>
+
+    <p>
+      Choose your favorite font, color and font size.
+      Your choices will be saved automatically.
+    </p>
+
+    <div class="controls">
+
+      <!-- Font -->
+      <div class="control">
+        <label for="font">Font Family</label>
+
+        <select id="font">
+          <option value="Open Sans">Open</option>
+          <option value="Cairo">Cairo</option>
+          <option value="Roboto">Roboto</option>
+        </select>
+      </div>
+
+      <!-- Color -->
+      <div class="control">
+        <label for="color">Color</label>
+
+        <select id="color">
+          <option value="#2563eb">Blue</option>
+          <option value="#dc2626">Red</option>
+          <option value="#16a34a">Green</option>
+          <option value="#9333ea">Purple</option>
+          <option value="#ea580c">Orange</option>
+          <option value="#111827">Black</option>
+        </select>
+      </div>
+
+      <!-- Font Size -->
+      <div class="control">
+        <label for="size">Font Size</label>
+
+        <select id="size">
+          <option value="16px">16</option>
+          <option value="17px">17</option>
+          <option value="18px">18</option>
+          <option value="19px">19</option>
+          <option value="20px">20</option>
+          <option value="21px">21</option>
+          <option value="22px">22</option>
+          <option value="23px">23</option>
+          <option value="24px">24</option>
+          <option value="25px">25</option>
+          <option value="26px">26</option>
+          <option value="27px">27</option>
+          <option value="28px">28</option>
+          <option value="29px">29</option>
+          <option value="30px">30</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="preview">
+      <h2>Live Preview</h2>
+
+      <p>
+        This text will change according to your selected
+        font, color and font size.
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="form-container">
+
+    <div class="form-header">
+      <h1>Registration Form</h1>
+      <p>Fill in your information below</p>
+    </div>
+
+    <form id="form">
+
+      <!-- Name -->
+      <div class="input-group">
+        <label for="name">Full Name</label>
+
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+        >
+      </div>
+
+      <!-- Email -->
+      <div class="input-group">
+        <label for="email">Email</label>
+
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+        >
+      </div>
+
+      <!-- Age -->
+      <div class="input-group">
+        <label for="age">Age</label>
+
+        <input
+          type="number"
+          id="age"
+          placeholder="Enter your age"
+        >
+      </div>
+
+      <!-- Select -->
+      <div class="input-group">
+        <label for="country">Choose Your Country</label>
+
+        <select id="country">
+
+          <option value="Egypt">Egypt</option>
+          <option value="Saudi Arabia">Saudi Arabia</option>
+          <option value="UAE">UAE</option>
+          <option value="Kuwait">Kuwait</option>
+          <option value="Qatar">Qatar</option>
+
+        </select>
+      </div>
+
+      <button type="submit">
+        Submit
+      </button>
+
+    </form>
+
+  </div>
+
+<script src="script.js"></script>
 </body>
 </html>
