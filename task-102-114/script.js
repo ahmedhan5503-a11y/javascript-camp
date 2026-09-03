@@ -160,23 +160,23 @@ function task4() {
 
 // Task 5
 
-let counter = document.getElementById("counter");
+// let counter = document.getElementById("counter");
 
-let number = Number(counter.textContent);
+// let number = Number(counter.textContent);
 
-let count = setInterval(function () {
-  counter.textContent = number;
+// let count = setInterval(function () {
+//   counter.textContent = number;
 
-  if (number === 5) {
-    window.open("https://elzero.org", "_blank", "width=800,height=600");
-  }
+//   if (number === 5) {
+//     window.open("https://elzero.org", "_blank", "width=800,height=600");
+//   }
 
-  if (number === 0) {
-    clearInterval(count);
-  }
+//   if (number === 0) {
+//     clearInterval(count);
+//   }
 
-  number--;
-}, 1000);
+//   number--;
+// }, 1000);
 
 // Task 6
 let font = document.getElementById("font");
